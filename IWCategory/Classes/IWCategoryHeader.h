@@ -22,7 +22,6 @@
 #import "UIColor+Extension.h"
 #import "ADUserConfig.h"
 #import "ADUserBaseLabel.h"
-#import "IWView.h"
 
 
 #endif /* IWCategoryHeader_h */
