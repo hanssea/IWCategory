@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IWCategory'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'IWCategory.'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ TODO: IWCategory 主要基本文件.
   s.source           = { :git => 'https://github.com/Hanssea/IWCategory.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'IWCategory/Classes/**/*'
   
