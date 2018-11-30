@@ -58,4 +58,14 @@
  @return 新图片
  */
 +(UIImage*)iwImageWithColor:(UIColor*)color;
+
+
+
+/**
+ 图片不被渲染
+
+ */
++ (UIImage *)originImageWithName: (NSString *)name;
+
+- (UIImage *)circleImage;
 @end
