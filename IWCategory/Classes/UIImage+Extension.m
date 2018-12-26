@@ -264,7 +264,7 @@
     return resultImage;
     
 }
-- (UIImage *)loadFromBudleName:(NSString *)name imageName:(NSString *)imageName{
++ (UIImage *)loadFromBudleName:(NSString *)name imageName:(NSString *)imageName{
     NSInteger scale=[[UIScreen mainScreen] scale];
     NSString *imsName=[NSString stringWithFormat:@"%@@%zdx.png",imageName,scale];
 

@@ -73,5 +73,5 @@
 /**
  从pod中加载图片
  */
-- (UIImage *)loadFromBudleName:(NSString *)name imageName:(NSString *)imageName;
++ (UIImage *)loadFromBudleName:(NSString *)name imageName:(NSString *)imageName;
 @end
