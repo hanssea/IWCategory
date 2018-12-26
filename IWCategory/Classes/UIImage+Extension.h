@@ -68,4 +68,10 @@
 + (UIImage *)originImageWithName: (NSString *)name;
 
 - (UIImage *)circleImage;
+
+
+/**
+ 从pod中加载图片
+ */
+- (UIImage *)loadFromBudleName:(NSString *)name imageName:(NSString *)imageName;
 @end

@@ -186,4 +186,10 @@
  @return 新View
  */
 + (instancetype)iw_viewfromXib;
+
+
+/**
+ 从所在类加载资源
+ */
++ (instancetype)iw_viewFromBudle;
 @end

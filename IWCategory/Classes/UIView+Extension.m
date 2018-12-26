@@ -211,5 +211,8 @@
 {
     return [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil] firstObject];
 }
-
++ (instancetype)iw_viewFromBudle{
+    NSBundle *budle=[NSBundle bundleForClass:[self class]];
+    return [[budle loadNibNamed:NSStringFromClass(self) owner:nil options:nil] firstObject];
+}
 @end
