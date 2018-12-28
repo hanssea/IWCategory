@@ -73,5 +73,5 @@
 /**
  从pod中加载图片
  */
-+ (UIImage *)loadFromBudleName:(NSString *)name imageName:(NSString *)imageName;
++ (instancetype)iw_imagePathWithName:(NSString *)imageName bundle:(NSString *)bundle targetClass:(Class)targetClass;
 @end

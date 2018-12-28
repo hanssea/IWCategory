@@ -264,12 +264,15 @@
     return resultImage;
     
 }
-+ (UIImage *)loadFromBudleName:(NSString *)name imageName:(NSString *)imageName{
-    NSInteger scale=[[UIScreen mainScreen] scale];
-    NSString *imsName=[NSString stringWithFormat:@"%@@%zdx.png",imageName,scale];
-
-    NSBundle *currentBundle=[NSBundle bundleForClass:[self class]];
-    NSString *path=[currentBundle pathForResource:imsName ofType:nil inDirectory:name];
-    return [UIImage imageWithContentsOfFile:path];
++ (instancetype)iw_imagePathWithName:(NSString *)imageName bundle:(NSString *)bundle targetClass:(Class)targetClass {
+    
+    NSInteger scale = [[UIScreen mainScreen] scale];
+    NSBundle *currentBundle = [NSBundle bundleForClass:targetClass];
+    NSString *name = [NSString stringWithFormat:@"%@@%zdx",imageName,scale];
+    NSString *dir = [NSString stringWithFormat:@"%@.bundle",bundle];
+    NSString *path = [currentBundle pathForResource:name ofType:@"png" inDirectory:dir];
+    NSString *pathNomarl = [currentBundle pathForResource:[NSString stringWithFormat:@"%@",imageName] ofType:@"png" inDirectory:dir];
+    return path ? [UIImage imageWithContentsOfFile:path] : [UIImage imageWithContentsOfFile:pathNomarl];
 }
+
 @end
