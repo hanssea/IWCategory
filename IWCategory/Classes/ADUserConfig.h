@@ -16,8 +16,6 @@
 #define IWLog(...)
 #endif
 
-// 4.客服电话
-#define AD_SERVER_NUMBER   @"400-618-0888"
 
 // 2.获得RGB颜色
 #define IWColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
@@ -50,16 +48,6 @@
 // 10.判断是否是 iPhoneX
 #define IWIs_iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
 
-
-////11.色值
-//#define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
-//#define RGB(r,g,b)  RGBA(r,g,b,1.0f)
-// 12.灰色色值
-#define IWLightColor   IWColor(51, 51, 51)
-// 13 全局背景颜色
-#define IW102BgColor   IWColor(102, 102, 102)
-// 13 全局背景颜色
-#define IWBgColor   IWColor(241, 241, 241)
 // 14 通知中心
 #define IWCenter   [NSNotificationCenter defaultCenter]
 #define IWNSUserDefaults     [NSUserDefaults standardUserDefaults]

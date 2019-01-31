@@ -13,4 +13,6 @@
  * hex color to rgd color, where hexString, such as: #FF00FF
  **/
 + (UIColor *)colorFromHexString:(NSString *)hexString;
+
++ (UIImage*)imageWithColor:(UIColor*)color;
 @end
