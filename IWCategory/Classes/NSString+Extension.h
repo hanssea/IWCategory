@@ -18,4 +18,13 @@
  *  @return 占用的宽高
  */
 -(CGSize)sizeWithFont:(UIFont *)font maxSize:(CGSize)maxSize;
+
+
+/**
+ 解析错误信息
+
+ @param error NSError类型错误信息
+ @return 字符串类型错误信息
+ */
++(NSString *)error:(NSError *)error;
 @end

@@ -60,12 +60,6 @@
 
 #define IWUserAddress  [IWNSUserDefaults objectForKey:IWAddress]
 
-#define IWSuccess  [returnData[@"success"] integerValue]==1
-// 17 服务器错误信息
-#define IWError      [ADUserTool trackError:error]
-// 18 服务器错误信息
-#define IWErrorMessage      [ADUserTool Error:error]
-
 
 #define IWImg(imgName)      [UIImage imageNamed:imgName]
 
