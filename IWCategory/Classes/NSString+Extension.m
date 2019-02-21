@@ -7,7 +7,7 @@
 //
 
 #import "NSString+Extension.h"
-
+#import "ADUserConfig.h"
 @implementation NSString (Extension)
 - (CGSize)sizeWithFont:(UIFont *)font maxSize:(CGSize)maxSize
 {
@@ -24,9 +24,9 @@
     NSLog(@"%@",resultDic);
     NSString *message = resultDic[@"error"][@"message"];
     NSString *details = resultDic[@"error"][@"details"];
-    if (message.length==0) {
-        message=@"";
-    }if (details.length==0) {
+    if (IWIsEmptyString(message)) {
+        message=@"Unknown error!";
+    }if (IWIsEmptyString(details)) {
         details=@"";
     }
     NSString *result_msg=[NSString stringWithFormat:@"%@%@",message,details];
