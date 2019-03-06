@@ -27,4 +27,12 @@
  @return 字符串类型错误信息
  */
 +(NSString *)error:(NSError *)error;
+
+
+/**
+ 对字符串进行MD5加盐加密
+
+ @param inputmessage 加盐后的字符串
+ */
++ (NSString *)MD5lower:(NSString *)inputmessage;
 @end

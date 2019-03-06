@@ -7,7 +7,7 @@
 //
 
 #import "IWViewController.h"
-
+#import "IWCategoryHeader.h"
 @interface IWViewController ()
 
 @end
@@ -17,7 +17,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    NSLog(@"1234567");
+    
+    
+    NSLog(@"加盐后----  %@",[NSString MD5lower:@"1234567"]);
 }
 
 - (void)didReceiveMemoryWarning
